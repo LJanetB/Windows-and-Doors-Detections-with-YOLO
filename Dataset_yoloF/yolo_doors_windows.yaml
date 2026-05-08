@@ -1,0 +1,7 @@
+path: Dataset_yoloF/door_window
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: door
+  1: window
