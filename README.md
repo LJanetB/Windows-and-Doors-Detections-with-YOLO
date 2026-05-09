@@ -1,3 +1,12 @@
+'''Project uses Yolo variants to detect doors and windows. Intent is to deploy the best model on an edge device on-board a UAV for real time detections '''
+
+# Custom Dataset Trained on 
+Total labeled images: 11678 (windows-21746  doors-9493)
+train: 9673
+val: 1211
+test: 794
+
+
 ''' Yolo-world inference '''
 
 # Fine-tuned .pt (classes already in model, no --classes needed)
