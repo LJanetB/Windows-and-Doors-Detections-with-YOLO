@@ -22,10 +22,10 @@ python world_infer_video.py --weights tensorrt/Yolov8s-worldv2.engine --source v
 ''' Other Yolo models inferencing '''
 
 # .pt model (FP32)
-python infer_video.py --weights Yolov8s-worldv2.pt --source video1.mp4
+python infer_video.py --weights pt/Yolo26l_best.pt --source video1.mp4
 
 # .pt model (FP16)
-python infer_video.py --weights Yolov8s-worldv2.pt --source video1.mp4 --half
+python infer_video.py --weights pt/Yolo26l_best.pt --source video1.mp4 --half
 
 # .engine model (exported with half=True — must pass --half)
-python infer_video.py --weights tensorrt/Yolov8s-worldv2.engine --source video1.mp4 --half
+python infer_video.py --weights tensorrt/Yolo26l_best.engine --source video1.mp4 --half
